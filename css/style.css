@@ -32,3 +32,11 @@ nav{
     filter: drop-shadow(2px 2px 2px white);
 }
 
+.container .links a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    margin:0 20px;
+}
+
