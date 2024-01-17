@@ -85,3 +85,17 @@ section .content{
     width: 100%;
     margin: 0 auto;
 }
+
+.main-content h1{
+    color: white;
+    font-size: clamp(2rem, 1rem + 5vw, 4rem);
+}
+
+.main-content h2{
+    color: #f74f10;
+    font-size: clamp(2rem, 1rem + 5vw, 3.5rem);
+}
+.main-content p{
+    margin-top: 10px;
+    color: #635e5c;
+}
