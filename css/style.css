@@ -13,44 +13,106 @@ body{
     background-color: black;
 }
 
-
-
-.contenedor{
-    background: white;
-    width: 100%;
-    height: 9vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav{
-    width: 100%;
-    height: 100%;
-}
-.logo{
-    width: 10%;
-    height: 100%;
-    display: flex;
-}
-
-img{
-    max-width: 100%;
-}
-
-.links{
-    display: flex;
-    justify-content: space-around;
-    margin: 0 15px;
-    width: 100%;
-    height: 100%;
+.container{
+    background: black;
     
 }
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    max-width: 1024px;
+    
+}
+ ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;    
+ }
+
+ ul li a{
+    padding: 0 16px;
+ }
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+.boton{
+    background: none;
+    border: none;
+    border-radius:  4px;
+}
+
+.boton .linea{
+
+    height: 2px;
+    width: 20px;
+    background: white;
+    margin: 4px 0;
+    z-index: 6;
+
+}
+
+
+.links a{
+    color: white;
+    text-decoration: none; 
+    font-size: 1.4rem;
+}
+
+.links a:hover::before,
+.links a:hover{
+    text-decoration: none; 
+    color: #f74f10;
+    width: 100%;
+}
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+     
+}
+
+.logo img{
+    display: flex;
+    justify-content: flex-start;
+    width: 150px;
+    margin-left:  10px;
+    filter: drop-shadow(4px 4px 4px white);
+
+}
+
+
+@media (min-width: 768px){
+
+        .boton {
+        display: none;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+            position: inherit;
+        }
+        ul {
+            flex-direction:  row;
+        }
+    }
+
+
+
+
 /* section :start */
 
 section{
     width: 100%;
     height: 90vh;
+    margin-top: 10vh;
 
 }
 section .content{
@@ -112,15 +174,15 @@ section .content{
 }
 
 .content .image img{
+
     max-width: 350px;
     width: 100%;
-    margin-right: 100px;
     transform: rotate(40deg)translateX(900px);
     filter: drop-shadow(-10px -10px 200px #f74f10);
 }
 
 
-@media(max-width: 800px){
+@media(max-width: 700px){
     .content{
         display: flex;
         width: 100%;
@@ -140,16 +202,16 @@ section .content{
 }
 
 @media (max-width: 440px){
-    .links{
-    display: none;
-    }
+
 
     .content .image img{
         width: 100%;
-        margin-right: none;
+
         margin-left: 5px;
     }
+
 }
+
 
 
 
