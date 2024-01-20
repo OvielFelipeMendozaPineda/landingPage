@@ -40,6 +40,8 @@ body{
 .logo {
     display: flex;
     align-items: center;
+    justify-content: center;
+    order: 2;
 
 }
 .boton{
@@ -58,6 +60,11 @@ body{
 
 }
 
+.links{
+    background-color: #f74f10;
+    border: none;
+    border-radius: 15px;
+}
 
 .links a{
     color: white;
@@ -102,6 +109,11 @@ nav{
         ul {
             flex-direction:  row;
         }
+        .logo {
+            order: 0;
+
+        
+        }
     }
 
 
@@ -127,7 +139,7 @@ section .content{
     color: white;
     max-width: 600px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .main-content h1{
@@ -145,12 +157,15 @@ section .content{
 
  .main-content .order{
     display: flex;
-    margin: 20px 10px;
+
     width: 100%;
     justify-content: space-around;
     min-height: 7vh;
 }
 
+.order{
+    margin-top: 5px;
+}
 .order h3{
     font-size: 1.8rem;
 }
@@ -191,7 +206,7 @@ section .content{
     }
 
     .main-content{
-        margin: 0 10px;
+        margin: 0 5px;
     }
 }
 
