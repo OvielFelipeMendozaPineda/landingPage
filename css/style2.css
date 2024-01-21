@@ -144,8 +144,9 @@ section .content{
         flex-direction: column-reverse;
     }
     .image img{
-        margin: 5%;
-        max-width: 100%;
+        margin-top: 0.7rem;
+        
+        max-width: 85%;
     }
     nav{
         flex-direction: row-reverse;
@@ -155,10 +156,13 @@ section .content{
         margin-left: 20px;
     }
     .main-content{
-        font-size: small;
+        font-size: 0.7rem
+        
     }
-    .logo img{
-
+    .order{
+        width: 90%;
     }
-
+    .logo{
+        margin: 8px 8px 0 0;
+    }
 }
