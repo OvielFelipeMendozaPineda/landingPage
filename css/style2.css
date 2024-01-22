@@ -207,6 +207,9 @@ section{
         font-size: 2rem;
 
     }
+    a:hover{
+        color: #f74f10;
+    }
 }
 
 @media (max-width: 1670px){
